@@ -17,7 +17,7 @@ class ProductRepository extends ServiceEntityRepository
     }
 
     /**
-     * Finds products based on search and category filters.
+     *
      *
      * @param string $search
      * @param int|null $categoryId
