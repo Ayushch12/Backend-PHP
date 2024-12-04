@@ -14,7 +14,7 @@ use Symfony\Component\Validator\Validator\ValidatorInterface;
 
 class ProductController extends AbstractController
 {
-// src/Controller/ProductController.php
+
 
 #[Route('/products', name: 'get_products', methods: ['GET'])]
 public function getAllProducts(Request $request, ProductRepository $repository): Response
@@ -26,6 +26,8 @@ public function getAllProducts(Request $request, ProductRepository $repository):
 
     return $this->json($products, 200, [], ['groups' => 'product:read']);
 }
+
+
 
 
 
